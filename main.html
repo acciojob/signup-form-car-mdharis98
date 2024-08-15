@@ -10,7 +10,7 @@
 	<!-- the entire body must be written by student -->
 
 
-	<form>
+	<form action="/submit_signup" method="POST">
 	<label for="name">Name</label>
 	<input id="name" type="text" placeholder="Name" required>
 	
@@ -23,9 +23,15 @@
         <input type="radio" id="gender_f" name="gender" value="female" required>
         <label for="gender_f">Female</label>
 
-	<label for="cars">Car Brands</label>
-	<input id="cars" type="select" placeholder="--Please choose an option--" required>
-
+	<label for="cars">Car Brands:</label>
+            <select id="cars" name="cars" required>
+                <option value="">--Please choose an option--</option>
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select>
+		
 	<label for="age">Age</label>
 	<input id="age" type="number" placeholder="Age" required>
 
